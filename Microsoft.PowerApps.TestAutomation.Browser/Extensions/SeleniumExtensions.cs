@@ -508,11 +508,11 @@ namespace Microsoft.PowerApps.TestAutomation.Browser
         {
             // Wait for app frame
             //driver.WaitUntilVisible(By.Id("fullscreen-app-host"), TimeSpan.FromSeconds(10));
-            driver.WaitUntilVisible(By.Id("iframe-powerapps-studio"), TimeSpan.FromSeconds(10));
+            driver.WaitUntilVisible(By.Id("EmbeddedStudio"), TimeSpan.FromSeconds(10));
 
             // Switch to app frame
             //driver.SwitchTo().Frame("fullscreen-app-host");
-            driver.SwitchTo().Frame("iframe-powerapps-studio");
+            driver.SwitchTo().Frame("EmbeddedStudio");
 
             // Define for current state of TestExecution
             int testExecutionState = 0;
