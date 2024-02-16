@@ -507,10 +507,12 @@ namespace Microsoft.PowerApps.TestAutomation.Browser
         public static JObject WaitForTestResults(this IWebDriver driver, int maxWaitTimeInSeconds)
         {
             // Wait for app frame
-            driver.WaitUntilVisible(By.Id("fullscreen-app-host"), TimeSpan.FromSeconds(10));
+            //driver.WaitUntilVisible(By.Id("fullscreen-app-host"), TimeSpan.FromSeconds(10));
+            driver.WaitUntilVisible(By.Id("iframe-powerapps-studio"), TimeSpan.FromSeconds(10));
 
             // Switch to app frame
-            driver.SwitchTo().Frame("fullscreen-app-host");
+            //driver.SwitchTo().Frame("fullscreen-app-host");
+            driver.SwitchTo().Frame("iframe-powerapps-studio");
 
             // Define for current state of TestExecution
             int testExecutionState = 0;
