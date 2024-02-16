@@ -140,9 +140,9 @@ namespace Microsoft.PowerApps.TestAutomation.Api
 
             // Wait for fullscreen-app-host
             //driver.WaitUntilVisible(By.Id("fullscreen-app-host"));
-            driver.WaitUntilVisible(By.Id("iframe-powerapps-studio"));
+            driver.WaitUntilVisible(By.Id("EmbeddedStudio"));
             //if (driver.IsVisible(By.Id("fullscreen-app-host")))
-            if (driver.IsVisible(By.Id("iframe-powerapps-studio")))
+            if (driver.IsVisible(By.Id("EmbeddedStudio")))
             {
                 Debug.WriteLine("fullscreen-app-host is visible.");
             }
